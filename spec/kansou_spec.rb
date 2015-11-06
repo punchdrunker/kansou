@@ -5,8 +5,9 @@ describe Kansou do
     expect(Kansou::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    Kansou.fetch(1)
-    expect(true).to eq(true)
+  it 'handles app id' do
+    expect(Kansou.is_app_store_app(123)).to eq(true)
+    expect(Kansou.is_app_store_app("com.example")).to eq(false)
+    expect(Kansou.is_app_store_app(nil)).to eq(false)
   end
 end

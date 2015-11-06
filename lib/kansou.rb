@@ -4,10 +4,10 @@ module Kansou
   def self.fetch(app_id, pages=0)
     if is_app_store_app(app_id)
       review = Kansou::AppStoreReview.new
-      review.fetch(app_id, pages)
+      return review.fetch(app_id, pages)
     else
       review = GooglePlayReview.new(app_id)
-      review.fetch
+      return review.fetch
     end
   end
 
