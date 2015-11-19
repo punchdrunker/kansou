@@ -3,11 +3,16 @@ require 'oga'
 
 module Kansou
   class AppStoreReview
-    def fetch(app_id, pages=0)
+    def fetch(app_id, page_amount=1)
+      # TODO: error handling
+      # app_id
+      # page_amount
+
       @app_id = app_id
       reviews = []
-      (0..pages).each do |page|
-        xml = download(app_id, pages)
+      max_page = page_amount - 1
+      (0..max_page).each do |page|
+        xml = download(app_id, page)
         reviews.concat(parse(xml))
       end
       return reviews
