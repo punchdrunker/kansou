@@ -34,7 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.10)
+  bundler (~> 1.9)
   kansou!
   oga
   rake (~> 10.0)

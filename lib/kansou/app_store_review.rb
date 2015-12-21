@@ -26,6 +26,7 @@ module Kansou
       url = base_url + "/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id="\
         + app_id.to_s + "&pageNumber="+page.to_s+"&sortOrdering=4&type=Purple+Software"
       xml = open(url, 'User-Agent' => user_agent, 'X-Apple-Store-Front' => '143462-1').read
+      return xml
     end
 
     def parse(xml)
