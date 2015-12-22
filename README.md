@@ -1,5 +1,3 @@
-# THIS LIBRARY IS WORK IN PROGRESS
-
 # Kansou
 
 https://circleci.com/gh/punchdrunker/kansou.png?circle-token=bfc0f99f7488f950f6e1743d65247a1f28d071c5
