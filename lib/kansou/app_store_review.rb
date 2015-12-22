@@ -3,28 +3,28 @@ require 'oga'
 
 module Kansou
   class AppStoreReview
-    def fetch(app_id, page_amount=1)
-      # TODO: error handling
-      # app_id
-      # page_amount
+    def initialize(app_id)
+      return nil unless app_id
 
       @app_id = app_id
+    end
+    def fetch(page_amount=1)
       reviews = []
       max_page = page_amount - 1
       (0..max_page).each do |page|
-        xml = download(app_id, page)
+        xml = download(page)
         reviews.concat(parse(xml))
       end
       return reviews
     end
 
-    def download(app_id, page=0)
+    def download(page=0)
       base_url = "https://itunes.apple.com"
       user_agent = "iTunes/9.2 (Windows; Microsoft Windows 7 "\
                                 + "Home Premium Edition (Build 7600)) AppleWebKit/533.16"
 
       url = base_url + "/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id="\
-        + app_id.to_s + "&pageNumber="+page.to_s+"&sortOrdering=4&type=Purple+Software"
+        + @app_id.to_s + "&pageNumber="+page.to_s+"&sortOrdering=4&type=Purple+Software"
       xml = open(url, 'User-Agent' => user_agent, 'X-Apple-Store-Front' => '143462-1').read
       return xml
     end

@@ -26,7 +26,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+require 'kansou'
+
+# reviews for Android app
+review = Kansou::GooglePlayReview.new("jp.mixi")
+p review.fetch # => prints reviews as array
+
+# reviews for iOS app
+review = Kansou::AppStoreReview.new(285951864)
+p review.fetch # => prints reviews as array
+```
 
 ## Development
 

@@ -27,6 +27,7 @@ module Kansou
         path = "/store/getreviews"
         data = "id=#{app_id}&reviewSortOrder=0&reviewType=1&pageNum=#{page}"
         response = http.post(path, data)
+        return response.body
       end
 
       def parse(input_text)
