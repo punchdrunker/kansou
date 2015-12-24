@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    kansou (0.1.0)
+    kansou (0.1.1)
+      oga
 
 GEM
   remote: https://rubygems.org/
@@ -36,7 +37,6 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.9)
   kansou!
-  oga
   rake (~> 10.0)
   rspec
 
