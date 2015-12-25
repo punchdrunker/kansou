@@ -1,5 +1,6 @@
 require 'json'
 require 'oga'
+require 'net/http'
 
 module Kansou
   class GooglePlayReview
