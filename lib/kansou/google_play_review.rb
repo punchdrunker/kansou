@@ -26,7 +26,7 @@ module Kansou
         http = Net::HTTP.new('play.google.com', 443)
         http.use_ssl = true
         path = "/store/getreviews"
-        data = "id=#{app_id}&reviewSortOrder=0&reviewType=1&pageNum=#{page}"
+        data = "id=#{app_id}&reviewSortOrder=0&reviewType=1&pageNum=#{page}&xhr=1"
         response = http.post(path, data)
         return response.body
       end
