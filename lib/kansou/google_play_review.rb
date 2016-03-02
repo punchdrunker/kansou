@@ -21,27 +21,25 @@ module Kansou
       return reviews
     end
 
+    # https://play.google.com/store/apps/details?id=jp.mixi&hl=ja
     private
       def download(app_id, page=0)
         http = Net::HTTP.new('play.google.com', 443)
         http.use_ssl = true
-        path = "/store/getreviews"
-        data = "id=#{app_id}&reviewSortOrder=0&reviewType=1&pageNum=#{page}"
+        path = "/store/apps/details"
+        data = "id=#{app_id}"
         response = http.post(path, data)
         return response.body
       end
 
       def parse(input_text)
-        input_text = remove_unused_lines(input_text)
-        json = JSON.load(input_text)
-        body = json[0][2]
+        document = Oga.parse_html(input_text)
 
         titles = []
         bodies = []
         dates = []
         stars = []
         authors = []
-        document = Oga.parse_html(body)
         main_expression = 'div[class="single-review"]'
         title_expression = 'span[class="review-title"]'
         body_expression = 'div[class="review-body"]'
