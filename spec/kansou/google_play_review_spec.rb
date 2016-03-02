@@ -12,8 +12,8 @@ describe Kansou::GooglePlayReview do
     reviews = review.fetch(1)
     
     expect(reviews.size).to eq(40)
-    expect(reviews[2][:star]).to eq(1)
-    expect(reviews[2][:date].to_s).to eq("2015年12月21日")
+    expect(reviews[2][:star]).to eq(2)
+    expect(reviews[2][:date].to_s).to eq("2016年2月27日")
     expect(reviews[2][:title].length).not_to eq(0)
     expect(reviews[2][:body].length).not_to eq(0)
   end
