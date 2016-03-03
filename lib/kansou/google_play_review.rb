@@ -1,6 +1,7 @@
 require 'json'
 require 'oga'
 require 'net/http'
+require 'logger'
 
 module Kansou
   class GooglePlayReview
@@ -8,6 +9,8 @@ module Kansou
       return nil unless app_id
 
       @app_id = app_id
+      @log = Logger.new(STDOUT)
+      @log.level = Logger::ERROR
     end
 
     def fetch(pages=1)
@@ -33,7 +36,12 @@ module Kansou
 
       def parse(input_text)
         input_text = remove_unused_lines(input_text)
-        json = JSON.load(input_text)
+        begin
+          json = JSON.load(input_text)
+        rescue JSON::ParserError => e
+          @log.fatal("failed to parse review for #{@app_id}")
+          return []
+        end
         body = json[0][2]
 
         titles = []

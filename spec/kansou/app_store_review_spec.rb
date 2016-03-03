@@ -2,10 +2,12 @@ require 'spec_helper'
 
 describe Kansou::AppStoreReview do
   it 'parses app store reviews' do
-    f = open(File.dirname(__FILE__) + '/../app_store_reviews.xml')
+    dummy_review_path = File.dirname(__FILE__) + '/../app_store_reviews.xml'
+    dummy_string = open(dummy_review_path){|f| f.read }
 
     kansou = Kansou::AppStoreReview.new(1234)
-    kansou.stub(:download).and_return(f.read)
+    allow(kansou).to receive(:download).and_return(dummy_string)
+
 
     reviews = kansou.fetch(1)
     
@@ -15,6 +17,18 @@ describe Kansou::AppStoreReview do
     expect(reviews[2][:date]).to eq("Nov01,2015")
     expect(reviews[2][:title].length).not_to eq(0)
     expect(reviews[2][:body].length).not_to eq(0)
+  end
+
+  it 'does not die if exception occurred' do
+    dummy_review_path = File.dirname(__FILE__) + '/../app_store_reviews_bad.xml'
+    dummy_string = open(dummy_review_path){|f| f.read }
+
+    kansou = Kansou::AppStoreReview.new(1234)
+    allow(kansou).to receive(:download).and_return(dummy_string)
+
+    reviews = kansou.fetch(1)
+    
+    expect(reviews.size).to eq(0)
   end
   
   it 'parses version info' do

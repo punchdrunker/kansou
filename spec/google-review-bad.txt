@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="description" content="日本最大級のポータルサイト。検索、オークション、ニュース、メール、コミュニティ、ショッピング、など80以上のサービスを展開。あなたの生活をより豊かにする「ライフ・エンジン」を目指していきます。">
+<meta name="robots" content="noodp">
+<meta name="google-site-verification" content="fsLMOiigp5fIpCDMEVodQnQC7jIY1K3UXW5QkQcBmVs">
+<link rel="alternate" href="android-app://jp.co.yahoo.android.yjtop/yahoojapan/home/top">
+<title>Yahoo! JAPAN</title>
+<style type="text/css"><!--
+body{word-break:break-all;font:12px/1.22 "Osaka","ＭＳ Ｐゴシック",Arial,sans-serif;*font-size:small;*font:x-small;}
+table{font-size:inherit;font:100%;}
+pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+h1,h2,h3,h4,h5{font-size:100%;}
+#p{width:350px;}
+a{color:#1d3994;text-decoration:none;}
+a:visited{color:#941d55;}
+a:hover{text-decoration:underline;}
+--></style>
+<style type="text/css" media="all"><!--
+form{margin:0;}
+#p{border:1px solid #7e9db9;}
+--></style>
+</head>
+<body link="#1d3994" vlink="#941d55" leftmargin="0" topmargin="0" marginwidth="1" marginheight="0">
+<center>
+<table width="770" border="0" cellspacing="0" cellpadding="0"><tr><td align="center">
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#c8d4e4">
+<tr>
+<td><table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#f9fafe">
+<tr>
+<td width="10%" align="right"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="1"></td>
+<td width="80%" align="center"></td>
+<td width="10%" align="right"><a href="http://help.yahoo.co.jp/"><nobr>ヘルプ</nobr></a></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"><br>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="http://k.yimg.jp/images/top/sp/cgrade/logo-mh-151110.gif" alt="" width="734" height="59" border="0" usemap="#Map">
+<map name="Map">
+<area shape="rect" coords="0,1,45,58" href="http://travel.yahoo.co.jp/" alt="トラベル">
+<area shape="rect" coords="81,1,124,58" href="http://auctions.yahoo.co.jp/" alt="ヤフオク!">
+<area shape="rect" coords="159,1,204,58" href="http://shopping.yahoo.co.jp/" alt="ショッピング">
+<area shape="rect" coords="256,-1,479,59" href="http://www.yahoo.co.jp/" alt="Yahoo! JAPAN">
+<area shape="rect" coords="530,1,576,57" href="http://my.yahoo.co.jp/" alt="My Yahoo!">
+<area shape="rect" coords="605,1,658,57" href="http://card.yahoo.co.jp/service/redirect/top/" alt="カード">
+<area shape="rect" coords="687,1,733,57" href="http://mail.yahoo.co.jp/" alt="メール">
+</map></td>
+</tr>
+</table>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="5"><br>
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="5"><br>
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#9fb6d5">
+<tr>
+<td><table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#e9eef4">
+<tr>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="10">
+<tr>
+<td align="center"><form name="sf1" action="http://search.yahoo.co.jp/search">
+<input type="hidden" name="fr" value="top_table">
+<input type="hidden" name="tid" value="top_table">
+<input type="hidden" name="ei" value="UTF-8">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td height="15"><input type="text" name="p" id="p" size="20"></td>
+<td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1">
+<input type="image" name="search" src="http://k.yimg.jp/images/top/searchbox/s_w-140325.gif" border="0" alt="ウェブ検索" title="ウェブ検索"></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="15"></td>
+</tr>
+<tr>
+<td><input type="image" name="isearch" src="http://k.yimg.jp/images/top/searchbox/s_i-140325.gif" alt="画像" title="画像検索" width="47" height="21" border="0"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1"><input type="image" name="msearch" src="http://k.yimg.jp/images/top/searchbox/s_m-140325.gif" alt="動画" title="動画検索" width="47" height="21" border="0"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1"><input type="image" name="dsearch" src="http://k.yimg.jp/images/top/searchbox/s_d-140325.gif" alt="辞書" title="辞書検索" width="47" height="21" border="0"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1"><input type="image" name="ksearch" src="http://k.yimg.jp/images/top/searchbox/s_k-140325.gif" alt="知恵袋" title="知恵袋検索" width="47" height="21" border="0"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1"><input type="image" name="csearch" src="http://k.yimg.jp/images/top/searchbox/s_mp-140325.gif" alt="地図" title="地図検索" width="47" height="21" border="0"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="166" height="1"></td>
+</tr>
+</table>
+</form></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10">
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#ffcc01">
+<tbody><tr>
+<td><table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#fefbc4">
+<tbody><tr>
+<td align="center">
+<nobr>Yahoo! JAPANトップページの機能を正しくご利用いただくには、下記の環境が必要となります。</nobr><br>
+Windows：Internet Explorer 9.0以上 / Chrome 最新版 / Firefox 最新版 / Microsoft Edge　Macintosh：Safari 5.0以上<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="15">
+</td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"><br>
+<a href="http://kafun.yahoo.co.jp/">花粉飛散予報や対策をチェック</a> - <a href="http://topics.shopping.yahoo.co.jp/special/gotouchi_mall/hokkaido/">北海道のおいしい海鮮やスイーツを送料無料でお届け</a><br>
+<a href="http://car.auctions.yahoo.co.jp/car_promo/renewal">ヤフオク!で探そう、欲しい車を安く買うチャンス</a> <img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="18"><br>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr>
+<td align="left" valign="top">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#d7e0ff"><tr><td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="4"><br><img src="http://k.yimg.jp/images/clear.gif" alt="" width="10" height="1"><strong>ニュース</strong><br><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="4"><br></td></tr><tr><td bgcolor="#9fb6d5"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="1"></td></tr></table><table width="100%" cellspacing="10" cellpadding="0"><tr><td><table width="100%" border="0" cellspacing="4" cellpadding="0"><tr><td><font size="-3" color="#666666">18時45分更新</font></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193185">トランプ氏勝利 共和党は混迷<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"><img src="http://k.yimg.jp/images/top/sp/cgrade/iconNew_150713.gif" width="30" height="12" alt="NEW" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193181">生活保護163万4千世帯 最多に<img src="http://k.yimg.jp/images/top/sp/cgrade/iconVideo_150713.gif" alt="動画" width="16" height="11" border="0"><img src="http://k.yimg.jp/images/top/sp/cgrade/iconNew_150713.gif" width="30" height="12" alt="NEW" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193176">竹田圭吾氏妻 最期の日つづる<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193172">白髪化を促す遺伝子を特定<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193165">ブラジル FB幹部を逮捕<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"><img src="http://k.yimg.jp/images/top/sp/cgrade/iconNew_150713.gif" width="30" height="12" alt="NEW" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193179">元G松本氏 賭けノック明かす<img src="http://k.yimg.jp/images/top/sp/cgrade/iconNew_150713.gif" width="30" height="12" alt="NEW" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193171">ベッキー寄付の情報 開示否定<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"></a></td></tr><tr><td>・<a href="http://news.yahoo.co.jp/pickup/6193178">松方弘樹 脳リンパ腫と診断<img src="http://k.yimg.jp/images/top/sp/cgrade/iconPhoto_150713.gif" alt="写真" width="16" height="12" border="0"></a></td></tr><tr><td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="10" height="20"><a href="http://news.yahoo.co.jp/list/?d=20160302&mc=f&mp=f">もっと見る</a><img src="http://k.yimg.jp/images/clear.gif" alt="" width="40" height="1"><a href="http://news.yahoo.co.jp/fc">記事一覧</a></td></tr></table></td><td width="140" valign="top" bgcolor="#e9eef4"><table width="100%" cellspacing="0" cellpadding="10"><tr><td><center><a href="http://headlines.yahoo.co.jp/hl?a=20160302-00047134-kitanihon-l16.view-000"><img src="http://lpt.c.yimg.jp/im_siggCu6PLtyDcuI7qW5wFfDiVw---x120-y120/amd/20160302-00047134-kitanihon-000-view.jpg" alt="春の味覚 幻想的に" width="120" height="95" border="0"></a></center><a href="http://headlines.yahoo.co.jp/hl?a=20160302-00047134-kitanihon-l16.view-000">春の味覚 幻想的に</a><br><font size="-3" color="#666666">3月2日10時30分配信<br>北日本新聞</font></td></tr></table></td></tr></table><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10">
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#a0b7d6">
+<tbody><tr>
+<td><table width="100%" border="0" cellpadding="4" cellspacing="0" bgcolor="#e9eef4">
+<tbody><tr>
+<td><table width="100%" cellpadding="2" cellspacing="0">
+<tbody><tr>
+<td width="25%" valign="top"><a href="http://shopping.yahoo.co.jp/">ショッピング</a></td>
+<td width="25%" valign="top"><a href="http://auctions.yahoo.co.jp/">ヤフオク!</a></td>
+<td width="25%" valign="top"><a href="http://travel.yahoo.co.jp/">旅行、ホテル予約</a></td>
+<td width="25%" valign="top"><a href="http://news.yahoo.co.jp/">ニュース</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://weather.yahoo.co.jp/weather/">天気</a></td>
+<td valign="top"><a href="http://sports.yahoo.co.jp/">スポーツナビ</a></td>
+<td valign="top"><a href="http://finance.yahoo.co.jp/">ファイナンス</a></td>
+<td valign="top"><a href="http://tv.yahoo.co.jp/">テレビ</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://gyao.yahoo.co.jp/">GYAO!</a></td>
+<td valign="top"><a href="http://yahoo-mbga.jp/?_ref=aff%3Dysm001">Y!モバゲー</a></td>
+<td valign="top"><a href="http://loco.yahoo.co.jp/">地域</a></td>
+<td valign="top"><a href="http://map.yahoo.co.jp/">地図</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://transit.yahoo.co.jp/">路線</a></td>
+<td valign="top"><a href="http://tabelog.com/">食べログ</a></td>
+<td valign="top"><a href="http://indival.yahoo.co.jp">求人、アルバイト</a></td>
+<td valign="top"><a href="http://realestate.yahoo.co.jp/">不動産</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://carview.yahoo.co.jp/">自動車</a></td>
+<td valign="top"><a href="http://textream.yahoo.co.jp/">掲示板</a></td>
+<td valign="top"><a href="http://blogs.yahoo.co.jp/">ブログ</a></td>
+<td valign="top"><a href="http://beauty.yahoo.co.jp/">ビューティー</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://partner.yahoo.co.jp/">出会い</a></td>
+<td valign="top"><a href="http://bookstore.yahoo.co.jp/">電子書籍</a></td>
+<td valign="top"><a href="http://movies.yahoo.co.jp/">映画</a></td>
+<td valign="top"><a href="http://games.yahoo.co.jp/">ゲーム</a></td>
+</tr>
+<tr>
+<td valign="top"><a href="http://fortune.yahoo.co.jp/fortune/">占い</a></td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="4" align="right"><strong><a href="http://services.yahoo.co.jp/?mode=pc">&gt;&gt;サービス一覧</a></strong></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+</td>
+<td width="10">&nbsp;</td>
+<td width="350" align="left" valign="top">
+<!-- SpaceID=0 robot -->
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"><br>
+<table width="100%" border="0" cellpadding="1" cellspacing="0" bgcolor="#9fb6d5">
+<tbody><tr>
+<td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+<td width="330" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+</tr>
+<tr>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif">&nbsp;</td>
+<td width="330"><table width="100%" border="0" cellpadding="2" cellspacing="0" bgcolor="#ffffff">
+<tbody>
+<tr>
+<td colspan="2"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="7" height="1"><a href="https://login.yahoo.co.jp/config/login?.src=www&.done=http://www.yahoo.co.jp">ログイン</a></td>
+</tr>
+<tr>
+<td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="7" height="1">IDでもっと便利に[ <a href="https://account.edit.yahoo.co.jp/registration?.src=www&.done=http%3A%2f%2fwww.yahoo.co.jp">新規取得</a> ]</td>
+<td align="right"><a href="https://account.edit.yahoo.co.jp/eval_profile?.src=www&.done=http%3A%2f%2fwww.yahoo.co.jp%2F"><img src="http://k.yimg.jp/images/top/sp/cgrade/info_btn-140325.gif" alt="登録情報" width="47" height="16" border="0"></a><img src="http://k.yimg.jp/images/clear.gif" alt="" width="7" height="1"></td>
+</tr>
+<tr>
+<td colspan="2"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="5"></td>
+</tr>
+<tr>
+<td><img src="http://k.yimg.jp/images/clear.gif" alt="" width="7" height="1"><strong><a href="http://mail.yahoo.co.jp/"><img src="http://k.yimg.jp/images/top/sp/cgrade/iconMail.gif" alt="Yahoo!メール" width="16" height="16" border="0" align="absmiddle">メール</a></strong> - <strong><a href="http://promo.mail.yahoo.co.jp/">メールアドレスを取得</a></strong></td>
+<td align="right"><a href="http://box.yahoo.co.jp"><img src="http://i.yimg.jp/images/sicons/box16.gif" alt="Yahoo!ボックス" width="16" height="16" border="0"></a><img src="http://k.yimg.jp/images/clear.gif" alt="" width="10" height="1"></td>
+</tr>
+<tr>
+<td colspan="2"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="7" height="1"><strong><a href="http://calendar.yahoo.co.jp/">カレンダー</a></strong> - <strong><a href="http://calendar.yahoo.co.jp/info/guide/z/">カレンダーを活用</a></strong></td>
+</tr>
+</tbody></table></td>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif">&nbsp;</td>
+</tr>
+<tr>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+<td width="330" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+<td width="10" background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10"></td>
+</tr>
+</tbody></table></td>
+</tr>
+<tr>
+<td bgcolor="#ffffff"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="1"></td>
+</tr>
+<tr>
+<td><table width="100%" border="0" cellspacing="0" cellpadding="5">
+<tbody><tr>
+<td background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/top/sp/cgrade/icon_point.gif" alt="ポイントを確認" width="25" height="16" align="top"><a href="http://points.yahoo.co.jp/" title="ポイントを確認">ポイントを確認</a></td>
+</tr>
+<tr>
+<td background="http://k.yimg.jp/images/top/sp/cgrade/pb_bg.gif"><img src="http://k.yimg.jp/images/clear.gif" alt="" width="5" height="1" align="top"><a href="https://lh.login.yahoo.co.jp/" title="ログイン履歴を確認">ログイン履歴を確認</a></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table></td>
+</tr>
+</tbody></table>
+<img src="http://k.yimg.jp/images/clear.gif" alt="" width="1" height="10">
+</td>
+</tr>
+</table>
+<hr size="1" color="#cccccc" width="100%">
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr>
+<td align="center"><nobr><a href="http://docs.yahoo.co.jp/info/">会社概要</a> - <a href="http://ir.yahoo.co.jp/">投資家情報</a> - <a href="http://csr.yahoo.co.jp/">社会的責任</a> - <a href="http://docs.yahoo.co.jp/info/charter/">企業行動憲章</a> - <a href="http://advertising.yahoo.co.jp/">広告掲載について</a> - <a href="http://hr.yahoo.co.jp/">採用情報</a></nobr></td>
+</tr>
+<tr>
+<td align="center"><a href="http://docs.yahoo.co.jp/docs/info/terms/">利用規約</a> - <a href="http://security.yahoo.co.jp/">セキュリティーの考え方</a> - <a href="http://docs.yahoo.co.jp/docs/info/terms/chapter1.html#cf2nd">プライバシーポリシー</a> - <a href="http://docs.yahoo.co.jp/docs/pr/disclaimer.html">免責事項</a></td>
+</tr>
+<tr>
+<td align="center">Copyright (C) 2016 Yahoo Japan Corporation. All Rights Reserved.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+
+<!-- p02.f1.top.bbt.yahoo.co.jp Wed Mar  2 18:55:37 JST 2016 -->

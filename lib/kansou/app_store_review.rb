@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'oga'
+require 'logger'
 
 module Kansou
   class AppStoreReview
@@ -7,6 +8,8 @@ module Kansou
       return nil unless app_id
 
       @app_id = app_id
+      @log = Logger.new(STDOUT)
+      @log.level = Logger::ERROR
     end
     def fetch(page_amount=1)
       reviews = []
@@ -35,7 +38,12 @@ module Kansou
       versions = []
       dates = []
       i = 0
-      document = Oga.parse_xml(xml)
+      begin
+        document = Oga.parse_xml(xml)
+      rescue LL::ParserError => e
+        @log.fatal("failed to parse review for #{@app_id}")
+        return []
+      end
 
       expression = 'TextView[topInset="0"][styleSet="basic13"][squishiness="1"][leftInset="0"][truncation="right"][textJust="left"][maxLines="1"]'
       document.css(expression).each do |elm|
