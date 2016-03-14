@@ -7,7 +7,15 @@ module Kansou
       return nil unless app_id
 
       @app_id = app_id
+
+      @users = []
+      @versions = []
+      @dates = []
+      @titles = []
+      @stars = []
+      @bodies = []
     end
+
     def fetch(page_amount=1)
       reviews = []
       max_page = page_amount - 1
@@ -30,13 +38,43 @@ module Kansou
     end
 
     def parse(xml)
-      items = []
-      users = []
-      versions = []
-      dates = []
       i = 0
       document = Oga.parse_xml(xml)
 
+      parse_author_info(document)
+
+      document.css('TextView[styleSet="basic13"][textJust="left"][maxLines="1"]').each do |elm|
+        elm.css('b').each do |e|
+          @titles.push e.text
+        end
+      end
+
+      document.css('HBoxView[topInset="1"]').each do |elm|
+        @stars.push elm.attribute("alt").value.gsub(/ stars*/,"")
+      end
+
+      document.css('TextView[styleSet="normal11"]').each do |elm|
+        @bodies.push(elm.text.gsub("\n", "<br />"))
+      end
+
+      items = []
+      count = @stars.size - 1
+      (0..count).each do |key|
+        item = {
+          :star => @stars[key],
+          :user => @users[key],
+          :date => @dates[key],
+          :title => @titles[key],
+          :body => @bodies[key],
+          :version => @versions[key],
+          :app_id => @app_id
+        }
+        items.push(item)
+      end
+      return items
+    end
+
+    def parse_author_info(document)
       expression = 'TextView[topInset="0"][styleSet="basic13"][squishiness="1"][leftInset="0"][truncation="right"][textJust="left"][maxLines="1"]'
       document.css(expression).each do |elm|
         if elm.text =~ /by/
@@ -47,54 +85,23 @@ module Kansou
               info.push v
             end
           end
-          users.push info[0]
+          @users.push info[0]
 
           if info[1]
-            versions.push(get_version(info[1]))
+            @versions.push(get_version(info[1]))
           else
-            versions.push("")
+            @versions.push("")
           end
 
           if info[2]
-            dates.push(info[2])
+            @dates.push(info[2])
           else
-            dates.push("")
+            @dates.push("")
           end
         end
       end
-
-      titles = []
-      document.css('TextView[styleSet="basic13"][textJust="left"][maxLines="1"]').each do |elm|
-        elm.css('b').each do |e|
-          titles.push e.text
-        end
-      end
-
-      stars = []
-      document.css('HBoxView[topInset="1"]').each do |elm|
-        stars.push elm.attribute("alt").value.gsub(/ stars*/,"")
-      end
-
-      bodies = []
-      document.css('TextView[styleSet="normal11"]').each do |elm|
-        bodies.push(elm.text.gsub("\n", "<br />"))
-      end
-
-      count = stars.size - 1
-      (0..count).each do |key|
-        item = {
-          :star => stars[key],
-          :user => users[key],
-          :date => dates[key],
-          :title => titles[key],
-          :body => bodies[key],
-          :version => versions[key],
-          :app_id => @app_id
-        }
-        items.push(item)
-      end
-      return items
     end
+
 
     def get_version(text)
       version = nil
