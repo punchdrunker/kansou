@@ -38,24 +38,12 @@ module Kansou
     end
 
     def parse(xml)
-      i = 0
       document = Oga.parse_xml(xml)
 
       parse_author_info(document)
-
-      document.css('TextView[styleSet="basic13"][textJust="left"][maxLines="1"]').each do |elm|
-        elm.css('b').each do |e|
-          @titles.push e.text
-        end
-      end
-
-      document.css('HBoxView[topInset="1"]').each do |elm|
-        @stars.push elm.attribute('alt').value.gsub(/ stars*/, '')
-      end
-
-      document.css('TextView[styleSet="normal11"]').each do |elm|
-        @bodies.push(elm.text.gsub("\n", '<br />'))
-      end
+      parse_title(document)
+      parse_star(document)
+      parse_body(document)
 
       items = []
       count = @stars.size - 1
@@ -74,28 +62,55 @@ module Kansou
       items
     end
 
+    def parse_title(document)
+      document.css('TextView[styleSet="basic13"][textJust="left"][maxLines="1"]').each do |elm|
+        elm.css('b').each do |e|
+          @titles.push e.text
+        end
+      end
+    end
+
+    def parse_star(document)
+      document.css('HBoxView[topInset="1"]').each do |elm|
+        @stars.push elm.attribute('alt').value.gsub(/ stars*/, '')
+      end
+    end
+
+    def parse_body(document)
+      document.css('TextView[styleSet="normal11"]').each do |elm|
+        @bodies.push(elm.text.gsub("\n", '<br />'))
+      end
+    end
+
     def parse_author_info(document)
       expression = 'TextView[topInset="0"][styleSet="basic13"][squishiness="1"][leftInset="0"][truncation="right"][textJust="left"][maxLines="1"]'
       document.css(expression).each do |elm|
         next unless elm.text =~ /by/
+
         tmp_array = elm.text.delete(' ').split("\n")
         info = []
         tmp_array.each do |v|
           info.push v if v != '' && v != '-' && v != 'by'
         end
         @users.push info[0]
+        push_version(info)
+        push_date(info)
+      end
+    end
 
-        if info[1]
-          @versions.push(get_version(info[1]))
-        else
-          @versions.push('')
-        end
+    def push_version(info)
+      if info[1]
+        @versions.push(get_version(info[1]))
+      else
+        @versions.push('')
+      end
+    end
 
-        if info[2]
-          @dates.push(info[2])
-        else
-          @dates.push('')
-        end
+    def push_date(info)
+      if info[2]
+        @dates.push(info[2])
+      else
+        @dates.push('')
       end
     end
 
