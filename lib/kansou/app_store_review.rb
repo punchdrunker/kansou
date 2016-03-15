@@ -83,7 +83,9 @@ module Kansou
     end
 
     def parse_author_info(document)
-      expression = 'TextView[topInset="0"][styleSet="basic13"][squishiness="1"][leftInset="0"][truncation="right"][textJust="left"][maxLines="1"]'
+      expression = 'TextView[topInset="0"][styleSet="basic13"]' +
+        '[squishiness="1"][leftInset="0"][truncation="right"]' +
+        '[textJust="left"][maxLines="1"]'
       document.css(expression).each do |elm|
         next unless elm.text =~ /by/
 
