@@ -16,8 +16,8 @@ module Kansou
     end
 
     def fetch
-      reviews = download(@app_id)
-      reviews
+      result = download(@app_id)
+      parse(result)
     end
 
     private

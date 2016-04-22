@@ -9,7 +9,7 @@ describe Kansou::GooglePlayReview do
     review = Kansou::GooglePlayReview.new("jp.mixi")
     review.stub(:download).and_return(dummy)
 
-    reviews = review.fetch(1)
+    reviews = review.fetch
     
     expect(reviews.size).to eq(40)
     expect(reviews[2][:star]).to eq(2)
