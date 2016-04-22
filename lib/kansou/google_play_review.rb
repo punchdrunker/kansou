@@ -15,32 +15,24 @@ module Kansou
       @authors = []
     end
 
-    def fetch(pages=1)
-      reviews = []
-      pages.times do |page|
-        result = download(@app_id, page)
-        if result
-          reviews.concat(parse(result))
-        end
-      end
-      return reviews
+    def fetch
+      result = download(@app_id)
+      parse(result)
     end
 
     private
-    def download(app_id, page = 0)
+
+    def download(app_id)
+      # https://play.google.com/store/apps/details?id=jp.mixi&hl=ja
       http = Net::HTTP.new('play.google.com', 443)
       http.use_ssl = true
-      path = '/store/getreviews'
-      data = "id=#{app_id}&reviewSortOrder=0&reviewType=1&pageNum=#{page}&xhr=1"
+      path = '/store/apps/details'
+      data = "id=#{app_id}"
       http.post(path, data).body
     end
 
     def parse(input_text)
-      input_text = remove_unused_lines(input_text)
-      json = JSON.load(input_text)
-      body = json[0][2]
-
-      document = Oga.parse_html(body)
+      document = Oga.parse_html(input_text)
       main_expression = 'div[class="single-review"]'
       document.css(main_expression).each do |elm|
         parse_review_element(elm)
@@ -49,7 +41,7 @@ module Kansou
       compose_review
     end
 
-    def compose_review()
+    def compose_review
       reviews = []
       count = @stars.size - 1
       (0..count).each do |key|
