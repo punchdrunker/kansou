@@ -28,7 +28,7 @@ module Kansou
       http.use_ssl = true
       path = '/store/apps/details'
       data = "id=#{app_id}"
-      http.post(path, data).body
+      http.post(path, data).body.force_encoding('UTF-8')
     end
 
     def parse(input_text)
