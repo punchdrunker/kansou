@@ -1,6 +1,6 @@
 # Kansou
 
-https://circleci.com/gh/punchdrunker/kansou.png?circle-token=bfc0f99f7488f950f6e1743d65247a1f28d071c5
+[![circle ci](https://circleci.com/gh/punchdrunker/kansou.png?circle-token=bfc0f99f7488f950f6e1743d65247a1f28d071c5&style=shield)](https://circleci.com/gh/punchdrunker/kansou)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kansou`. To experiment with that code, run `bin/console` for an interactive prompt.
 
