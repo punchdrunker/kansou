@@ -64,9 +64,9 @@ module Kansou
         @titles.push(title_node.text)
       end
 
-      body_expression = 'div[class="review-body"]'
+      body_expression = 'div[class="review-body with-review-wrapper"]'
       elm.css(body_expression).each do |body_node|
-        @bodies.push(body_node.text)
+        @bodies.push(body_node.text.strip)
       end
 
       date_expression = 'span[class="review-date"]'
